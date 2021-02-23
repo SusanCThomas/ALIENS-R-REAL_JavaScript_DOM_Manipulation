@@ -27,3 +27,10 @@ tableData.forEach((ufoSightings) => {
 
 // Select the button
 var button = d3.select("#filter-btn");
+
+// Button to return to full table
+var fullTable = d3.select("full-btn");
+// Select the Full table return
+fullTable.on("click", function () {
+    filteredData(tableData);
+});
