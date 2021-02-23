@@ -61,3 +61,20 @@ function runEnter() {
 
     // Clear out current contents in the table
     tbody.html("");
+
+    // If results have no match
+    if (filteredData.length === 0) {
+        tbody.text(`no matching for ${inputValue}.`);
+    }
+    // For Matching results
+    else {
+        filteredData.forEach((ufoSightings) => {
+            var row = tbody.append("tr");
+            Object.entries(ufoSightings).forEach(([key, value]) => {
+                var cell = row.append("td");
+                cell.text(value);
+            });
+        });
+
+    };
+};
