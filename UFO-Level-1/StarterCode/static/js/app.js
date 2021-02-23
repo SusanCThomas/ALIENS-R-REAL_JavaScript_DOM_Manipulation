@@ -34,3 +34,10 @@ var fullTable = d3.select("full-btn");
 fullTable.on("click", function () {
     filteredData(tableData);
 });
+
+// Select the form
+var form = d3.select("#form");
+
+// Create event handlers
+button.on("click", runEnter);
+form.on("submit", runEnter);
