@@ -58,3 +58,6 @@ function runEnter() {
     // Use the form input to filter the data by datetime
     var filteredData = tableData.filter((sighting) => sighting.datetime === inputValue);
     console.log(filteredData);
+
+    // Clear out current contents in the table
+    tbody.html("");
