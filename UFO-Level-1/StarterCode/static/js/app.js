@@ -25,3 +25,5 @@ tableData.forEach((ufoSightings) => {
 // that will listen for events and search through the `date/time` 
 // column to find rows that match user input.
 
+// Select the button
+var button = d3.select("#filter-btn");
